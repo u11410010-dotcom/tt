@@ -1,0 +1,2934 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" data-theme="dark" data-mode="both">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>地球物理第一次上課：中英對照開場講稿 | First Class of Geophysics</title>
+  <meta name="description" content="地球物理第一次上課中英雙語對照開場講稿。學習地球物理、科學思考（CER）、科學建模循環與 AI 協作思考。">
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+/* ==========================================================================
+   INLINED SELF-CONTAINED DESIGN SYSTEM (Guarantees Perfect Styling Everywhere)
+   ========================================================================== */
+:root {
+  --font-en: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-tc: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --bg-page: #080c16;
+  --bg-page-gradient: radial-gradient(circle at 15% 15%, rgba(14, 165, 233, 0.08) 0%, transparent 40%),
+                      radial-gradient(circle at 85% 85%, rgba(139, 92, 246, 0.07) 0%, transparent 45%),
+                      radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.04) 0%, transparent 60%);
+  --bg-surface: #0f172a;
+  --bg-surface-elevated: #1e293b;
+  --bg-surface-hover: #273549;
+  --bg-card: rgba(15, 23, 42, 0.85);
+  --bg-card-hover: rgba(30, 41, 59, 0.95);
+  --bg-glass: rgba(15, 23, 42, 0.75);
+  
+  --border-subtle: rgba(255, 255, 255, 0.09);
+  --border-focus: rgba(56, 189, 248, 0.5);
+  --border-highlight: rgba(56, 189, 248, 0.35);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-en: #38bdf8;
+  --text-en-strong: #00d2ff;
+
+  --primary: #0284c7;
+  --primary-glow: rgba(2, 132, 199, 0.35);
+  --primary-light: #38bdf8;
+  --accent-cyan: #06b6d4;
+  --accent-teal: #14b8a6;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+  --accent-violet: #8b5cf6;
+
+  --claim-color: #f59e0b;
+  --claim-bg: rgba(245, 158, 11, 0.09);
+  --evidence-color: #0ea5e9;
+  --evidence-bg: rgba(14, 165, 233, 0.09);
+  --reasoning-color: #10b981;
+  --reasoning-bg: rgba(16, 185, 129, 0.09);
+
+  --header-height: 68px;
+  --sidebar-width: 300px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  
+  --shadow-card: 0 12px 32px -4px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--border-subtle);
+  --shadow-glow: 0 0 30px rgba(56, 189, 248, 0.15);
+
+  --body-font-size: 1.05rem;
+  --line-height-base: 1.8;
+}
+
+[data-theme="light"] {
+  --bg-page: #f8fafc;
+  --bg-page-gradient: radial-gradient(circle at 15% 15%, rgba(2, 132, 199, 0.05) 0%, transparent 40%),
+                      radial-gradient(circle at 85% 85%, rgba(139, 92, 246, 0.04) 0%, transparent 45%);
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f1f5f9;
+  --bg-surface-hover: #e2e8f0;
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-card-hover: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.9);
+
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-focus: rgba(2, 132, 199, 0.6);
+  --border-highlight: rgba(2, 132, 199, 0.25);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-en: #0284c7;
+  --text-en-strong: #0369a1;
+
+  --claim-bg: #fffbeb;
+  --evidence-bg: #f0f9ff;
+  --reasoning-bg: #ecfdf5;
+
+  --shadow-card: 0 10px 25px -3px rgba(0, 0, 0, 0.05), 0 0 0 1px var(--border-subtle);
+  --shadow-glow: 0 0 25px rgba(2, 132, 199, 0.1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-tc), var(--font-en);
+  background-color: var(--bg-page);
+  background-image: var(--bg-page-gradient);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  line-height: var(--line-height-base);
+  font-size: var(--body-font-size);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 9999;
+}
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--primary-light), var(--accent-violet));
+  box-shadow: 0 0 12px var(--primary-light);
+  transition: width 0.1s linear;
+}
+
+/* Site Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: var(--header-height);
+  background: var(--bg-glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.header-container {
+  max-width: 1480px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary), var(--accent-teal));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 14px var(--primary-glow);
+}
+
+.brand-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.brand-title {
+  font-family: var(--font-tc);
+  font-weight: 800;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.brand-subtitle {
+  font-family: var(--font-en);
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lang-switch-group {
+  display: flex;
+  background: var(--bg-surface-elevated);
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.lang-btn:hover { color: var(--text-primary); }
+.lang-btn.active {
+  background: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 2px 10px var(--primary-glow);
+}
+
+.font-size-group {
+  display: flex;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: var(--bg-surface-hover);
+  color: var(--text-primary);
+}
+
+.theme-toggle-btn {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+}
+
+[data-theme="dark"] .sun-icon { display: block; }
+[data-theme="dark"] .moon-icon { display: none; }
+[data-theme="light"] .sun-icon { display: none; }
+[data-theme="light"] .moon-icon { display: block; }
+.mobile-only { display: none; }
+
+/* Layout */
+.app-layout {
+  max-width: 1480px;
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem 1.5rem 6rem;
+  gap: 2.5rem;
+}
+
+.sidebar-toc {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  position: sticky;
+  top: calc(var(--header-height) + 1.5rem);
+  height: calc(100vh - var(--header-height) - 3rem);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.toc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.toc-header h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  font-family: var(--font-en);
+}
+
+.toc-search-box {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.toc-search-box input {
+  width: 100%;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.toc-search-box input:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+.search-clear {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 4px;
+}
+
+.toc-nav {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.35rem;
+}
+
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.toc-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.8rem;
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  line-height: 1.35;
+}
+
+.toc-link:hover {
+  background: var(--bg-surface-hover);
+  color: var(--text-primary);
+}
+
+.toc-link.active {
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px var(--primary-glow);
+}
+
+.toc-num {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: var(--bg-surface-elevated);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toc-link.active .toc-num {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+.sidebar-info-card {
+  margin-top: 1rem;
+  padding: 0.85rem;
+  border-radius: var(--radius-sm);
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px dashed rgba(56, 189, 248, 0.25);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.info-card-header {
+  font-weight: 700;
+  color: var(--primary-light);
+  margin-bottom: 0.35rem;
+}
+
+/* Main Content */
+.content-container {
+  flex: 1;
+  min-width: 0;
+  max-width: 960px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  padding: 3.5rem 2.5rem;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.75));
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card), var(--shadow-glow);
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--primary-light);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: var(--font-en);
+  margin-bottom: 1.25rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.5px;
+}
+
+[data-theme="light"] .hero-title {
+  color: #0f172a;
+}
+
+.hero-title-sub {
+  background: linear-gradient(90deg, var(--accent-cyan), var(--primary-light), var(--accent-violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.hero-en-title {
+  font-family: var(--font-en);
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.hero-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 2rem;
+}
+
+.meta-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all 0.2s;
+}
+
+.meta-tag:hover {
+  border-color: var(--border-highlight);
+  transform: translateY(-1px);
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-primary-glow {
+  background: linear-gradient(135deg, var(--primary), #0284c7);
+  color: #ffffff;
+  border: none;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  box-shadow: 0 4px 18px var(--primary-glow);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.btn-primary-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(2, 132, 199, 0.5);
+}
+
+.btn-secondary-outline {
+  background: var(--bg-surface-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-secondary-outline:hover {
+  background: var(--bg-surface-hover);
+  border-color: var(--border-highlight);
+}
+
+/* Lecture Sections */
+.lecture-section {
+  margin-bottom: 4rem;
+  scroll-margin-top: calc(var(--header-height) + 2rem);
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.sec-number {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--primary-light);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(56, 189, 248, 0.15);
+}
+
+.section-title {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.section-title .sub-en {
+  display: block;
+  font-family: var(--font-en);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 0.35rem;
+}
+
+.speech-blocks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.speech-block {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.65rem;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.speech-block:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-highlight);
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.speech-block.playing-active {
+  border-color: var(--accent-cyan) !important;
+  box-shadow: 0 0 24px rgba(6, 182, 212, 0.35) !important;
+  background: rgba(14, 165, 233, 0.12) !important;
+}
+
+.text-zh {
+  font-size: 1.08rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.text-en {
+  font-family: var(--font-en);
+  font-size: 1.02rem;
+  color: var(--text-en);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.btn-speak-inline {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.95rem;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+.speech-block:hover .btn-speak-inline { opacity: 1; }
+.btn-speak-inline:hover {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  transform: scale(1.08);
+}
+
+.speech-block.emphasis-box {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.1), rgba(139, 92, 246, 0.08));
+  border-left: 4px solid var(--primary-light);
+}
+
+.quote-callout {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.65));
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: var(--shadow-card);
+}
+
+.quote-icon {
+  font-size: 2.75rem;
+  color: var(--primary-light);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.quote-zh {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="light"] .quote-zh { color: #0f172a; }
+
+.quote-en {
+  font-family: var(--font-en);
+  font-size: 1.1rem;
+  color: var(--text-en);
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Questions Grid */
+.three-questions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1rem 0;
+}
+
+.q-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.25s;
+}
+
+.q-card:hover {
+  border-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.q-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-light);
+  background: rgba(56, 189, 248, 0.12);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.q-zh {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.q-en {
+  font-family: var(--font-en);
+  font-size: 0.95rem;
+  color: var(--text-en);
+  font-weight: 500;
+}
+
+/* Concept Highlight Card */
+.concept-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  border: 1px solid var(--border-subtle);
+  margin: 1rem 0;
+  box-shadow: var(--shadow-card);
+}
+
+.claim-theme {
+  border-left: 5px solid var(--claim-color);
+  background: linear-gradient(135deg, var(--claim-bg), var(--bg-card));
+}
+
+.evidence-theme {
+  border-left: 5px solid var(--evidence-color);
+  background: linear-gradient(135deg, var(--evidence-bg), var(--bg-card));
+}
+
+.reasoning-theme {
+  border-left: 5px solid var(--reasoning-color);
+  background: linear-gradient(135deg, var(--reasoning-bg), var(--bg-card));
+}
+
+.concept-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 0.5px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.tag-claim { background: rgba(245, 158, 11, 0.2); color: var(--claim-color); }
+.tag-evidence { background: rgba(14, 165, 233, 0.2); color: var(--evidence-color); }
+.tag-reasoning { background: rgba(16, 185, 129, 0.2); color: var(--reasoning-color); }
+
+.concept-text-zh {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.concept-text-en {
+  font-family: var(--font-en);
+  font-size: 1.05rem;
+  color: var(--text-en);
+  margin-bottom: 1.25rem;
+}
+
+.concept-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+/* Seismic SVG Visualizer */
+.graphic-box {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+.graphic-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.seismic-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pulse-dot {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% { r: 5px; opacity: 0.9; }
+  50% { r: 9px; opacity: 0.4; }
+  100% { r: 5px; opacity: 0.9; }
+}
+
+/* Steps Flow Vertical */
+.steps-flow-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 1rem 0;
+}
+
+.reasoning-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--bg-surface-elevated);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  position: relative;
+}
+
+.step-num-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--reasoning-color);
+  color: #ffffff;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Interactive CER Cards */
+.cer-interactive-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.cer-interactive-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.cer-interactive-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -6px rgba(0, 0, 0, 0.4);
+}
+
+.cer-interactive-card.cer-claim {
+  border-top: 4px solid var(--claim-color);
+  background: linear-gradient(180deg, var(--claim-bg) 0%, var(--bg-card) 60%);
+}
+
+.cer-interactive-card.cer-evidence {
+  border-top: 4px solid var(--evidence-color);
+  background: linear-gradient(180deg, var(--evidence-bg) 0%, var(--bg-card) 60%);
+}
+
+.cer-interactive-card.cer-reasoning {
+  border-top: 4px solid var(--reasoning-color);
+  background: linear-gradient(180deg, var(--reasoning-bg) 0%, var(--bg-card) 60%);
+}
+
+.cer-badge {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.cer-claim .cer-badge {
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--claim-color);
+}
+
+.cer-evidence .cer-badge {
+  background: rgba(14, 165, 233, 0.2);
+  color: var(--evidence-color);
+}
+
+.cer-reasoning .cer-badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--reasoning-color);
+}
+
+.cer-card-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.cer-prompt-zh {
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.cer-prompt-en {
+  font-family: var(--font-en);
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 1.25rem;
+}
+
+.cer-example-box {
+  margin-top: auto;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.example-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary-light);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* 8-Step Scientific Modeling Cycle */
+.cycle-interactive-wrapper {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+}
+
+.cycle-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cycle-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.cycle-step {
+  background: var(--bg-surface-elevated);
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1rem 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.cycle-step:hover {
+  background: var(--bg-surface-hover);
+  border-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.cycle-step.active {
+  background: rgba(2, 132, 199, 0.15);
+  border-color: var(--primary-light);
+  box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.cycle-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cycle-step.active .cycle-step-num {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.cycle-step-zh {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.cycle-step-en {
+  font-family: var(--font-en);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.cycle-step-detail {
+  background: var(--bg-surface-elevated);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+.detail-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-light);
+  background: rgba(56, 189, 248, 0.12);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.cycle-step-detail h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.cycle-step-detail p {
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+/* AI Warning & Checklist */
+.ai-warning-box {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(239, 68, 68, 0.05));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 1.5rem 0;
+}
+
+.warning-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.warning-icon { font-size: 2rem; }
+.warning-zh {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--accent-amber);
+}
+.warning-en {
+  font-family: var(--font-en);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.ai-question-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ai-q-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  transition: all 0.2s;
+}
+
+.ai-q-item:hover {
+  border-color: var(--accent-amber);
+  transform: translateY(-2px);
+}
+
+.ai-q-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.ai-q-zh {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+.ai-q-en {
+  font-family: var(--font-en);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Checklist Card */
+.checklist-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  margin: 1.5rem 0;
+}
+
+.checklist-card-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+}
+
+.checklist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-surface-elevated);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  position: relative;
+}
+
+.check-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-emerald);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.check-zh {
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--text-primary);
+}
+
+.check-en {
+  font-family: var(--font-en);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* Scientific Pathway */
+.scientific-pathway {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: var(--primary-light);
+}
+
+.path-step {
+  background: var(--bg-surface-elevated);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.path-step.final {
+  background: linear-gradient(135deg, var(--primary), var(--accent-teal));
+  color: #ffffff;
+  border: none;
+}
+
+/* Interactive Mini-Quiz */
+.quiz-section-wrapper {
+  margin: 3.5rem 0;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.8));
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card), var(--shadow-glow);
+}
+
+.quiz-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.quiz-badge {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--accent-emerald);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.quiz-header h3 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+[data-theme="light"] .quiz-header h3 { color: #0f172a; }
+
+.quiz-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-q-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  color: var(--text-primary);
+}
+
+.quiz-q-num {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  background: var(--primary);
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quiz-option {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.25rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
+}
+
+.quiz-option:hover:not(.disabled) {
+  background: var(--bg-surface-hover);
+  border-color: var(--primary-light);
+  transform: translateX(4px);
+}
+
+.quiz-option.correct {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border-color: var(--accent-emerald) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 14px rgba(16, 185, 129, 0.3);
+}
+
+.quiz-option.wrong {
+  background: rgba(239, 68, 68, 0.15) !important;
+  border-color: var(--accent-rose) !important;
+  color: #ffffff !important;
+}
+
+.quiz-feedback {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-size: 0.92rem;
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.quiz-feedback.show-correct {
+  display: block;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--accent-emerald);
+}
+
+.quiz-feedback.show-wrong {
+  display: block;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: var(--accent-rose);
+}
+
+/* Closing Message & Footer */
+.closing-card {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.2), rgba(139, 92, 246, 0.15));
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: var(--radius-xl);
+  padding: 3rem 2.5rem;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-card), var(--shadow-glow);
+}
+
+.closing-badge {
+  display: inline-block;
+  font-family: var(--font-en);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--primary-light);
+  background: rgba(56, 189, 248, 0.12);
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+
+.grand-quote {
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.quote-text-zh {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+[data-theme="light"] .quote-text-zh { color: #0f172a; }
+
+.quote-text-en {
+  font-family: var(--font-en);
+  font-size: 1.15rem;
+  color: var(--text-en);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.closing-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.site-footer {
+  margin-top: 5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.footer-sub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* Floating Audio Bar */
+.floating-audio-bar {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(120px);
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  border-radius: 999px;
+  padding: 0.6rem 1.25rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(56, 189, 248, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  z-index: 9000;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+[data-theme="light"] .floating-audio-bar {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(2, 132, 199, 0.3);
+}
+
+.floating-audio-bar.visible {
+  transform: translateX(-50%) translateY(0);
+}
+
+.audio-bar-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sound-wave {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 18px;
+}
+
+.sound-wave span {
+  width: 3px;
+  height: 100%;
+  background: var(--primary-light);
+  border-radius: 2px;
+  animation: waveBounce 1.2s infinite ease-in-out;
+}
+
+.sound-wave span:nth-child(2) { animation-delay: 0.2s; }
+.sound-wave span:nth-child(3) { animation-delay: 0.4s; }
+.sound-wave span:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes waveBounce {
+  0%, 100% { height: 4px; }
+  50% { height: 18px; }
+}
+
+.audio-bar-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.audio-controls-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rate-selector {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-audio-action {
+  background: var(--primary);
+  border: none;
+  color: #ffffff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-audio-action:hover { background: var(--accent-cyan); }
+.btn-audio-stop {
+  background: var(--bg-surface-elevated);
+  color: var(--text-secondary);
+}
+.btn-audio-stop:hover {
+  background: var(--accent-rose);
+  color: #ffffff;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 8000;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: var(--primary);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px var(--primary-glow);
+}
+
+/* Language Filter Modes */
+[data-mode="zh"] .text-en,
+[data-mode="zh"] .quote-en,
+[data-mode="zh"] .cer-prompt-en,
+[data-mode="zh"] .hero-en-title,
+[data-mode="zh"] .sub-en,
+[data-mode="zh"] .btn-speak-inline,
+[data-mode="zh"] .btn-speak-mini,
+[data-mode="zh"] .quote-text-en {
+  display: none !important;
+}
+
+[data-mode="en"] .text-zh,
+[data-mode="en"] .quote-zh,
+[data-mode="en"] .cer-prompt-zh,
+[data-mode="en"] .hero-title,
+[data-mode="en"] .quote-text-zh {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .sidebar-toc {
+    position: fixed;
+    left: -340px;
+    top: 0;
+    height: 100vh;
+    z-index: 9990;
+    width: 300px;
+    border-radius: 0;
+    transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .sidebar-toc.open {
+    left: 0;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  }
+  .mobile-only { display: inline-flex; }
+  .cycle-flow-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .header-container { padding: 0 1rem; }
+  .brand-subtitle { display: none; }
+  .hero-section { padding: 2.25rem 1.5rem; }
+  .hero-title { font-size: 1.85rem; }
+  .quote-callout { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .floating-audio-bar {
+    width: 92%;
+    left: 4%;
+    transform: translateY(120px);
+    justify-content: space-between;
+  }
+  .floating-audio-bar.visible { transform: translateY(0); }
+}
+  </style>
+</head>
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="progress-bar-container">
+    <div id="progressBar" class="progress-bar"></div>
+  </div>
+
+  <!-- Sticky Top Header & Global Controls -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#top" class="brand" aria-label="回到開頭">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">地球物理講稿</span>
+          <span class="brand-subtitle">Geophysics Bilingual Lecture</span>
+        </div>
+      </a>
+
+      <!-- Quick Action Controls -->
+      <div class="header-controls">
+        <!-- Language Switcher Tabs -->
+        <div class="lang-switch-group" role="group" aria-label="語言閱讀模式">
+          <button type="button" class="lang-btn active" data-set-mode="both" title="顯示中英雙語對照">
+            <span>🌐</span> 中英對照
+          </button>
+          <button type="button" class="lang-btn" data-set-mode="zh" title="僅顯示繁體中文">
+            <span>中文</span>
+          </button>
+          <button type="button" class="lang-btn" data-set-mode="en" title="僅顯示英文 (English Immersion)">
+            <span>English</span>
+          </button>
+        </div>
+
+        <!-- Font Size Adjuster -->
+        <div class="font-size-group">
+          <button type="button" id="fontDecrease" class="icon-btn" title="縮小字體" aria-label="縮小字體">A-</button>
+          <button type="button" id="fontReset" class="icon-btn" title="重設字體大小" aria-label="重設字體">A</button>
+          <button type="button" id="fontIncrease" class="icon-btn" title="放大字體" aria-label="放大字體">A+</button>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button type="button" id="themeToggle" class="icon-btn theme-toggle-btn" title="切換深色 / 淺色模式" aria-label="切換主題">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
+        </button>
+
+        <!-- Mobile TOC Toggle Button -->
+        <button type="button" id="mobileTocToggle" class="icon-btn mobile-only" aria-label="開啟章節目錄">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="app-layout" id="top">
+    <!-- Sidebar Navigation / Table of Contents -->
+    <aside id="sidebarToc" class="sidebar-toc">
+      <div class="toc-header">
+        <h3>章節目錄 / Contents</h3>
+        <button type="button" id="closeTocBtn" class="icon-btn mobile-only" aria-label="關閉目錄">✕</button>
+      </div>
+
+      <!-- Quick Search inside TOC -->
+      <div class="toc-search-box">
+        <input type="text" id="searchInput" placeholder="搜尋講稿關鍵字..." aria-label="搜尋講稿關鍵字">
+        <span id="searchClear" class="search-clear" style="display:none;">✕</span>
+      </div>
+
+      <nav class="toc-nav">
+        <ul class="toc-list">
+          <li><a href="#core-concept" class="toc-link active"><span class="toc-num">✦</span> 課程核心理念 / Core Idea</a></li>
+          <li><a href="#sec-1" class="toc-link"><span class="toc-num">1</span> 課程開始 / Opening</a></li>
+          <li><a href="#sec-2" class="toc-link"><span class="toc-num">2</span> 不只是學知識，也要學思考</a></li>
+          <li><a href="#sec-3" class="toc-link"><span class="toc-num">3</span> 從地震問題開始：Claim</a></li>
+          <li><a href="#sec-4" class="toc-link"><span class="toc-num">4</span> Evidence：證據在哪裡？</a></li>
+          <li><a href="#sec-5" class="toc-link"><span class="toc-num">5</span> Reasoning：為什麼會這樣？</a></li>
+          <li><a href="#sec-6" class="toc-link"><span class="toc-num">6</span> CER 科學思考架構</a></li>
+          <li><a href="#sec-7" class="toc-link"><span class="toc-num">7</span> 從 CER 到科學模型</a></li>
+          <li><a href="#sec-8" class="toc-link"><span class="toc-num">8</span> 模型不是永遠正確的</a></li>
+          <li><a href="#sec-9" class="toc-link"><span class="toc-num">9</span> 科學建模是一個循環</a></li>
+          <li><a href="#sec-10" class="toc-link"><span class="toc-num">10</span> AI 在課程中扮演的角色</a></li>
+          <li><a href="#sec-11" class="toc-link"><span class="toc-num">11</span> AI 協作與獨立理解</a></li>
+          <li><a href="#sec-12" class="toc-link"><span class="toc-num">12</span> 這學期真正要學的目標</a></li>
+          <li><a href="#mini-quiz" class="toc-link"><span class="toc-num">✍</span> 課堂概念互動測驗</a></li>
+          <li><a href="#closing-msg" class="toc-link"><span class="toc-num">★</span> 總結金句 / Closing Message</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-info-card">
+        <div class="info-card-header">💡 雙語閱讀小提示</div>
+        <p>點擊段落旁的 <strong>🔊</strong> 按鈕，即可聆聽標準發音；亦可點擊下方全篇朗讀展開浮動播放器。</p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+      
+      <!-- Hero Banner -->
+      <section class="hero-section">
+        <div class="hero-badge">🌍 GEOPHYSICS &bull; BILINGUAL SCIENTIFIC THINKING</div>
+        <h1 class="hero-title">
+          地球物理第一次上課<br>
+          <span class="hero-title-sub">中英對照開場講稿</span>
+        </h1>
+        <div class="hero-en-title">First Class of Geophysics: Bilingual Opening Script</div>
+
+        <div class="hero-meta-tags">
+          <span class="meta-tag">🎓 跨領域雙語教學</span>
+          <span class="meta-tag">🔬 CER 科學思考</span>
+          <span class="meta-tag">🤖 AI 輔助探索</span>
+          <span class="meta-tag">🌋 板塊構造與地震</span>
+        </div>
+
+        <div class="hero-cta-group">
+          <button type="button" id="startFullAudioBtn" class="btn-primary-glow">
+            <span>🎧 開始全篇語音朗讀</span>
+          </button>
+          <a href="#core-concept" class="btn-secondary-outline">
+            <span>📜 開始閱讀講稿</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Core Idea Card -->
+      <section id="core-concept" class="lecture-section">
+        <div class="concept-card claim-theme" data-speech-en="We are not learning English for its own sake. We use English to learn new scientific knowledge. We will learn not only geophysics, AI, and digital technology, but also how to think scientifically.">
+          <span class="concept-tag tag-claim">CORE PHILOSOPHY / 核心理念</span>
+          <div class="concept-text-zh">
+            我們不是要學英文，而是用英文來學習新的學科知識；我們不只學地球物理、AI 與數位科技，也學習如何進行科學思考。
+          </div>
+          <div class="concept-text-en">
+            We are not learning English for its own sake. We use English to learn new scientific knowledge. We will learn not only geophysics, AI, and digital technology, but also how to think scientifically.
+          </div>
+          <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+        </div>
+      </section>
+
+      <!-- Section 1 -->
+      <section id="sec-1" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">01</span>
+          <h2 class="section-title">課程開始<br><span class="sub-en">Course Opening</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="Today is our first class of this semester.">
+            <div class="text-zh">今天是我們這學期第一次上課。</div>
+            <div class="text-en">Today is our first class of this semester.</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="This semester, we will use both Chinese and English in this class.">
+            <div class="text-zh">這學期，我們會同時使用中文和英文兩種語言來上課。</div>
+            <div class="text-en">This semester, we will use both Chinese and English in this class.</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="Please don't worry if you cannot understand everything in English. I will provide bilingual materials and scripts for you to follow.">
+            <div class="text-zh">大家不用擔心聽不懂英文。老師會盡量提供中英對照的教材與講稿，讓大家可以參考。</div>
+            <div class="text-en">Please don't worry if you cannot understand everything in English. I will provide bilingual materials and scripts for you to follow.</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="The purpose of this course is not to turn geophysics into an English class.">
+            <div class="text-zh">我們這門課的目的，不是要把地球物理課變成英文課。</div>
+            <div class="text-en">The purpose of this course is not to turn geophysics into an English class.</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="speech-block emphasis-box" data-speech-en="We are not learning English just for the sake of learning English. We are learning how to use English to learn new scientific knowledge.">
+            <div class="text-zh">我們不是為了「學英文」而學英文，而是希望慢慢學會<strong>用英文來學習新的學科知識</strong>。</div>
+            <div class="text-en">We are not learning English just for the sake of learning English. We are learning how to <strong>use English to learn new scientific knowledge</strong>.</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="So, it is completely fine if you understand only part of the English at first.">
+            <div class="text-zh">所以，如果一開始只能聽懂一部分，沒有關係。</div>
+            <div class="text-en">So, it is completely fine if you understand only part of the English at first.</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="What matters is that you gradually learn how scientists use English to describe phenomena, ask questions, present evidence, and explain their ideas.">
+            <div class="text-zh">重要的是，你要逐漸熟悉科學家怎麼使用英文描述現象、提出問題、表達證據，以及解釋自己的想法。</div>
+            <div class="text-en">What matters is that you gradually learn how scientists use English to describe phenomena, ask questions, present evidence, and explain their ideas.</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="sec-2" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">02</span>
+          <h2 class="section-title">我們不只是學知識，也要學習怎麼思考<br><span class="sub-en">We Are Learning Not Only Knowledge, but Also How to Think</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="In this course, I hope you will do more than simply memorize geophysical knowledge.">
+            <div class="text-zh">在這門課裡，我希望大家不只是記住地球物理的知識。</div>
+            <div class="text-en">In this course, I hope you will do more than simply memorize geophysical knowledge.</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="More importantly, I want you to learn something essential:">
+            <div class="text-zh">我更希望大家學習一件重要的事情：</div>
+            <div class="text-en">More importantly, I want you to learn something essential:</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="quote-callout" data-speech-en="How do we know whether an idea is correct?">
+            <div class="quote-icon">“</div>
+            <div class="quote-content">
+              <div class="quote-zh">我們怎麼知道一件事情是對的？</div>
+              <div class="quote-en">How do we know whether an idea is correct?</div>
+            </div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="Science is not only about giving us answers. More importantly, science asks us: Why do you think so? What is your evidence? How do you connect your evidence to your conclusion?">
+            <div class="text-zh">科學不是只告訴我們答案。科學更重要的是：你為什麼這樣認為？你的證據是什麼？你如何從證據得到這個結論？</div>
+            <div class="text-en">Science is not only about giving us answers. More importantly, science asks us: Why do you think so? What is your evidence? How do you connect your evidence to your conclusion?</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <!-- 3 Critical Questions Cards -->
+          <div class="three-questions-grid">
+            <div class="q-card" data-speech-en="Why do you think so?">
+              <div class="q-badge">Question 1</div>
+              <div class="q-zh">你為什麼這樣認為？</div>
+              <div class="q-en">Why do you think so?</div>
+              <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+            </div>
+            <div class="q-card" data-speech-en="What is your evidence?">
+              <div class="q-badge">Question 2</div>
+              <div class="q-zh">你的證據是什麼？</div>
+              <div class="q-en">What is your evidence?</div>
+              <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+            </div>
+            <div class="q-card" data-speech-en="How do you connect your evidence to your conclusion?">
+              <div class="q-badge">Question 3</div>
+              <div class="q-zh">你如何從證據得到這個結論？</div>
+              <div class="q-en">How do you connect your evidence to your conclusion?</div>
+              <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="sec-3" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">03</span>
+          <h2 class="section-title">從一個地震問題開始<br><span class="sub-en">Let's Start with an Earthquake Question</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="For example, I have an idea:">
+            <div class="text-zh">例如，我現在提出一個想法：</div>
+            <div class="text-en">For example, I have an idea:</div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="concept-card claim-theme" data-speech-en="I think earthquakes do not occur equally everywhere in the world. Earthquakes are usually concentrated in certain areas. This is my claim.">
+            <span class="concept-tag tag-claim">CLAIM (主張)</span>
+            <div class="concept-text-zh">
+              我認為全世界並不是所有地方都會經常發生地震。地震通常集中發生在某些特定的地方。
+            </div>
+            <div class="concept-text-en">
+              I think earthquakes do not occur equally everywhere in the world. Earthquakes are usually concentrated in certain areas.
+            </div>
+            <div class="concept-footer">
+              <strong>Claim 就是：</strong>我認為事情是這樣的。（<em>This is my claim: This is what I think is happening.</em>）
+            </div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="sec-4" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">04</span>
+          <h2 class="section-title">Evidence：你的證據在哪裡？<br><span class="sub-en">Evidence: What Supports Your Claim?</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="But science cannot stop at I think so. So the next question is: What is my evidence?">
+            <div class="text-zh">但是，科學不能只有「我覺得」。所以接下來我要問：<strong>我的證據是什麼？</strong></div>
+            <div class="text-en">But science cannot stop at “I think so.” So the next question is: <strong>What is my evidence?</strong></div>
+            <button type="button" class="btn-speak-inline" title="朗讀英文">🔊</button>
+          </div>
+
+          <div class="concept-card evidence-theme">
+            <span class="concept-tag tag-evidence">EVIDENCE (證據)</span>
+            <div class="speech-block" style="background:transparent; border:none; padding:0; box-shadow:none;" data-speech-en="For example, we can examine a map showing the global distribution of earthquakes. We can see that earthquakes are not evenly distributed across the Earth's surface. Many earthquakes are concentrated along narrow belts. Therefore, the global earthquake distribution map supports my claim.">
+              <div class="concept-text-zh">
+                例如，我們可以觀察一張<strong>全球地震活動分布圖</strong>。我們會發現，地震並不是平均散布在整個地球表面。很多地震集中形成一條一條的帶狀區域。因此，這張全球地震分布圖支持了我剛才的說法。
+              </div>
+              <div class="concept-text-en">
+                For example, we can examine a map showing the global distribution of earthquakes. We can see that earthquakes are not evenly distributed across the Earth's surface. Many earthquakes are concentrated along narrow belts. Therefore, the global earthquake distribution map supports my claim.
+              </div>
+              <button type="button" class="btn-speak-inline">🔊</button>
+            </div>
+
+            <!-- Interactive Global Seismic Belts SVG Visualizer -->
+            <div class="graphic-box">
+              <div class="graphic-title">
+                <span>🌐 全球地震帶分布示意圖 (Global Seismic Belts Schematic)</span>
+              </div>
+              <svg viewBox="0 0 700 180" class="seismic-svg" aria-label="全球地震帶示意圖">
+                <rect width="700" height="180" rx="12" fill="rgba(15, 23, 42, 0.6)"></rect>
+                
+                <!-- Plate Shapes -->
+                <path d="M 40 40 Q 90 20, 150 50 T 220 120 T 160 160 T 60 120 Z" fill="#0284c7" opacity="0.25"></path>
+                <path d="M 280 30 Q 380 15, 450 60 T 430 140 T 310 150 Z" fill="#0284c7" opacity="0.25"></path>
+                <path d="M 520 40 Q 620 20, 670 60 T 650 150 T 540 140 Z" fill="#0284c7" opacity="0.25"></path>
+                
+                <!-- Seismic Belts Dashed Line -->
+                <path d="M 50 140 C 90 100, 130 60, 200 70 S 260 140, 310 130 S 410 70, 480 80 S 550 140, 660 110" 
+                      fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="6,4"></path>
+                
+                <!-- Pulsing Epicenter Dots -->
+                <circle cx="90" cy="115" r="5" fill="#ef4444" class="pulse-dot"></circle>
+                <circle cx="160" cy="65" r="7" fill="#ef4444" class="pulse-dot"></circle>
+                <circle cx="240" cy="110" r="6" fill="#ef4444" class="pulse-dot"></circle>
+                <circle cx="310" cy="130" r="5" fill="#ef4444" class="pulse-dot"></circle>
+                <circle cx="450" cy="75" r="8" fill="#ef4444" class="pulse-dot"></circle>
+                <circle cx="560" cy="130" r="6" fill="#ef4444" class="pulse-dot"></circle>
+                <circle cx="630" cy="110" r="7" fill="#ef4444" class="pulse-dot"></circle>
+
+                <text x="350" y="165" text-anchor="middle" fill="#94a3b8" font-size="12" font-family="Outfit, sans-serif">
+                  環太平洋地震帶 &bull; 歐亞地震帶 (Narrow belts of intense seismic activity)
+                </text>
+              </svg>
+            </div>
+
+            <div class="concept-footer">
+              <strong>Evidence 就是：</strong>我看到了什麼資料或現象，可以支持我的說法？（<em>What data or observations support my claim?</em>）
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="sec-5" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">05</span>
+          <h2 class="section-title">Reasoning：為什麼會這樣？<br><span class="sub-en">Reasoning: Why Does This Happen?</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="But we are not finished yet. The next question is: Why are earthquakes concentrated in these areas?">
+            <div class="text-zh">但是，我們還沒有完成。下一個問題是：<strong>為什麼地震會集中在這些地方？</strong></div>
+            <div class="text-en">But we are not finished yet. The next question is: <strong>Why are earthquakes concentrated in these areas?</strong></div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <div class="concept-card reasoning-theme">
+            <span class="concept-tag tag-reasoning">REASONING (推理與機制)</span>
+            
+            <div class="steps-flow-vertical">
+              <div class="reasoning-step-item" data-speech-en="This may be related to plate motion and plate tectonics.">
+                <span class="step-num-badge">1</span>
+                <div>
+                  <div class="text-zh">這可能與地球的<strong>板塊運動</strong>以及<strong>板塊構造</strong>有關。</div>
+                  <div class="text-en">This may be related to plate motion and plate tectonics.</div>
+                </div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+
+              <div class="reasoning-step-item" data-speech-en="The outer part of the Earth is not one single unbroken shell. It can be viewed as being made of several different tectonic plates.">
+                <span class="step-num-badge">2</span>
+                <div>
+                  <div class="text-zh">地球最外層並不是完整的一整塊。它可以看成由許多不同的板塊拼接而成。</div>
+                  <div class="text-en">The outer part of the Earth is not one single unbroken shell. It can be viewed as being made of several different tectonic plates.</div>
+                </div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+
+              <div class="reasoning-step-item" data-speech-en="These plates move relative to one another.">
+                <span class="step-num-badge">3</span>
+                <div>
+                  <div class="text-zh">而這些板塊彼此之間會產生相對運動。</div>
+                  <div class="text-en">These plates move relative to one another.</div>
+                </div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+
+              <div class="reasoning-step-item" data-speech-en="When plates collide, separate, or slide past each other, stress can build up in rocks.">
+                <span class="step-num-badge">4</span>
+                <div>
+                  <div class="text-zh">當板塊碰撞、分離或彼此錯動時，岩石會累積應力。</div>
+                  <div class="text-en">When plates collide, separate, or slide past each other, stress can build up in rocks.</div>
+                </div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+
+              <div class="reasoning-step-item" data-speech-en="When the accumulated stress is suddenly released, an earthquake may occur. Therefore, plate motion can help explain why many earthquakes occur in particular regions.">
+                <span class="step-num-badge">5</span>
+                <div>
+                  <div class="text-zh">當累積的應力突然釋放，就可能產生地震。因此，板塊運動可以解釋為什麼許多地震集中出現在特定區域。</div>
+                  <div class="text-en">When the accumulated stress is suddenly released, an earthquake may occur. Therefore, plate motion can help explain why many earthquakes occur in particular regions.</div>
+                </div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+            </div>
+
+            <div class="concept-footer">
+              <strong>Reasoning 是：</strong>我如何利用科學原理，把 Evidence 和 Claim 連接起來？（<em>How do I use scientific ideas to connect my evidence with my claim?</em>）
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: CER Table & Matrix -->
+      <section id="sec-6" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">06</span>
+          <h2 class="section-title">CER：一種有意識的科學思考方式<br><span class="sub-en">CER: A Conscious Way of Scientific Thinking</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="So, what we have just done is an important scientific thinking process: Claim - Evidence - Reasoning.">
+            <div class="text-zh">所以剛才我們其實完成了一個非常重要的科學思考流程：<strong>Claim - Evidence - Reasoning (CER)</strong></div>
+            <div class="text-en">So, what we have just done is an important scientific thinking process: <strong>Claim - Evidence - Reasoning (CER)</strong></div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <!-- Interactive CER Matrix -->
+          <div class="cer-interactive-container">
+            <div class="cer-interactive-card cer-claim">
+              <div class="cer-badge">C</div>
+              <h3 class="cer-card-title">Claim 主張</h3>
+              <div class="cer-prompt-zh">我認為事情是怎樣？</div>
+              <div class="cer-prompt-en">What do I think is happening?</div>
+              <div class="cer-example-box">
+                <span class="example-label">課堂實例：</span>
+                <p>地震並非隨機均勻分布，而是集中在特定狹窄地帶。</p>
+              </div>
+            </div>
+
+            <div class="cer-interactive-card cer-evidence">
+              <div class="cer-badge">E</div>
+              <h3 class="cer-card-title">Evidence 證據</h3>
+              <div class="cer-prompt-zh">我有哪些觀察、資料或證據？</div>
+              <div class="cer-prompt-en">What observations or data support my idea?</div>
+              <div class="cer-example-box">
+                <span class="example-label">課堂實例：</span>
+                <p>全球震央分布觀測圖呈現明顯的環太平洋與歐亞帶狀聚集。</p>
+              </div>
+            </div>
+
+            <div class="cer-interactive-card cer-reasoning">
+              <div class="cer-badge">R</div>
+              <h3 class="cer-card-title">Reasoning 推理</h3>
+              <div class="cer-prompt-zh">為什麼這些證據可以支持我的說法？</div>
+              <div class="cer-prompt-en">Why does this evidence support my claim?</div>
+              <div class="cer-example-box">
+                <span class="example-label">課堂實例：</span>
+                <p>利用板塊構造學說：板塊相對運動造成岩層應力積聚，破裂時釋放引發地震。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="speech-block emphasis-box" data-speech-en="CER helps us investigate and think more consciously. Instead of simply memorizing an answer, we begin to understand how that answer is constructed.">
+            <div class="text-zh">CER 可以幫助我們<strong>有意識地進行探究與思考</strong>。它讓我們不只是記住答案，而是開始思考答案是怎麼建立出來的。</div>
+            <div class="text-en">CER helps us <strong>investigate and think more consciously</strong>. Instead of simply memorizing an answer, we begin to understand <strong>how that answer is constructed</strong>.</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="sec-7" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">07</span>
+          <h2 class="section-title">從 CER 到科學模型<br><span class="sub-en">From CER to Scientific Models</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="As we repeatedly develop claims, examine evidence, and construct reasoning, we gradually build an explanation of the natural world. This explanation can develop into a scientific model.">
+            <div class="text-zh">當我們不斷進行 Claim、Evidence 和 Reasoning 的過程，我們其實正在逐漸形成一個對自然世界的解釋。這個解釋，可以進一步形成一個<strong>科學模型</strong>。</div>
+            <div class="text-en">As we repeatedly develop claims, examine evidence, and construct reasoning, we gradually build an explanation of the natural world. This explanation can develop into a <strong>scientific model</strong>.</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <div class="quote-callout" data-speech-en="The Earth's surface consists of several tectonic plates, and these plates are constantly moving. Many earthquakes, volcanoes, and landforms are related to interactions between these plates.">
+            <div class="quote-icon">🌍</div>
+            <div class="quote-content">
+              <div class="quote-zh">地球表面由許多板塊組成，而板塊持續運動。許多地震、火山和地形現象與板塊之間的交互作用有關。</div>
+              <div class="quote-en">The Earth's surface consists of several tectonic plates, and these plates are constantly moving. Many earthquakes, volcanoes, and landforms are related to interactions between these plates.</div>
+            </div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="This is a model that can help us explain natural phenomena. More importantly, a good model should also help us make predictions. For example, if we know where plate boundaries are located, can we predict which regions are more likely to experience earthquakes?">
+            <div class="text-zh">這就是一個可以幫助我們<strong>解釋現象</strong>的模型。更重要的是，一個好的模型還應該可以幫助我們進行<strong>預測</strong>。<br>例如，如果我們知道板塊邊界的位置，我們是否可以預測哪些區域比較容易發生地震？</div>
+            <div class="text-en">This is a model that can help us <strong>explain natural phenomena</strong>. More importantly, a good model should also help us <strong>make predictions</strong>.<br>For example, if we know where plate boundaries are located, can we predict which regions are more likely to experience earthquakes?</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8 -->
+      <section id="sec-8" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">08</span>
+          <h2 class="section-title">模型不是永遠正確的<br><span class="sub-en">Models Are Not Always Perfect</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="But one of the most interesting things about science is this: Models are not always perfect.">
+            <div class="text-zh">但是科學非常有趣的一件事情是：<strong>模型並不是永遠正確的。</strong></div>
+            <div class="text-en">But one of the most interesting things about science is this: <strong>Models are not always perfect.</strong></div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="One day, we may discover a new phenomenon. And our existing model may not be able to explain it.">
+            <div class="text-zh">有一天，我們可能發現一個新的現象。而這個現象是原本的模型沒有辦法解釋的。</div>
+            <div class="text-en">One day, we may discover a new phenomenon. And our existing model may not be able to explain it.</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="At that point, we should not pretend that the phenomenon does not exist. We should ask new questions, collect new evidence, develop or revise our claim, and reconsider our reasoning.">
+            <div class="text-zh">這時候，我們不應該假裝這個現象不存在。我們應該重新問問題、重新蒐集 Evidence、重新提出或修正 Claim、重新思考 Reasoning。</div>
+            <div class="text-en">At that point, we should not pretend that the phenomenon does not exist. We should ask new questions, collect new evidence, develop or revise our claim, and reconsider our reasoning.</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <div class="speech-block emphasis-box" data-speech-en="In other words: We go through the CER process again. Eventually, we may revise our original model.">
+            <div class="text-zh">換句話說：<strong>我們再跑一次 CER。</strong>最後，我們可能會修正原來的模型。</div>
+            <div class="text-en">In other words: <strong>We go through the CER process again.</strong> Eventually, we may revise our original model.</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 9: Scientific Modeling Cycle -->
+      <section id="sec-9" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">09</span>
+          <h2 class="section-title">科學建模是一個循環<br><span class="sub-en">Scientific Modeling Is a Cycle</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="Scientific modeling is not: The teacher gives you a model, and you memorize it.">
+            <div class="text-zh">所以，科學建模不是：老師告訴你一個模型，然後你把它背起來。</div>
+            <div class="text-en">Scientific modeling is not: The teacher gives you a model, and you memorize it.</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <!-- Interactive 8-Step Modeling Cycle -->
+          <div class="cycle-interactive-wrapper">
+            <div class="cycle-title">🔬 科學建模 8 步驟循環探究 (點擊各步驟切換解說)</div>
+            
+            <div class="cycle-flow-grid">
+              <div class="cycle-step active" data-step="1">
+                <div class="cycle-step-num">1</div>
+                <div class="cycle-step-zh">觀察現象</div>
+                <div class="cycle-step-en">Observe</div>
+              </div>
+              <div class="cycle-step" data-step="2">
+                <div class="cycle-step-num">2</div>
+                <div class="cycle-step-zh">提出 Claim</div>
+                <div class="cycle-step-en">Make a Claim</div>
+              </div>
+              <div class="cycle-step" data-step="3">
+                <div class="cycle-step-num">3</div>
+                <div class="cycle-step-zh">尋找 Evidence</div>
+                <div class="cycle-step-en">Collect Evidence</div>
+              </div>
+              <div class="cycle-step" data-step="4">
+                <div class="cycle-step-num">4</div>
+                <div class="cycle-step-zh">建立 Reasoning</div>
+                <div class="cycle-step-en">Build Reasoning</div>
+              </div>
+              <div class="cycle-step" data-step="5">
+                <div class="cycle-step-num">5</div>
+                <div class="cycle-step-zh">建立模型</div>
+                <div class="cycle-step-en">Construct Model</div>
+              </div>
+              <div class="cycle-step" data-step="6">
+                <div class="cycle-step-num">6</div>
+                <div class="cycle-step-zh">解釋與預測</div>
+                <div class="cycle-step-en">Explain & Predict</div>
+              </div>
+              <div class="cycle-step" data-step="7">
+                <div class="cycle-step-num">7</div>
+                <div class="cycle-step-zh">發現問題</div>
+                <div class="cycle-step-en">Find Anomalies</div>
+              </div>
+              <div class="cycle-step" data-step="8">
+                <div class="cycle-step-num">8</div>
+                <div class="cycle-step-zh">修正模型</div>
+                <div class="cycle-step-en">Revise Model</div>
+              </div>
+            </div>
+
+            <!-- Dynamic Detail Box -->
+            <div class="cycle-step-detail">
+              <span class="detail-badge">步驟 1 / Step 1</span>
+              <h4 id="detailTitle">觀察自然界的真實現象 (Observe Phenomena)</h4>
+              <p id="detailDesc">透過科學儀器（地震儀波形、重力與磁場量測、衛星 GPS 地殼變形）或地表地質調查，記錄並發現自然界中不尋常或規律的現象。</p>
+            </div>
+          </div>
+
+          <div class="speech-block" data-speech-en="Then the cycle begins again. This is one of the main ways scientific knowledge develops over time.">
+            <div class="text-zh">然後這個循環可能再重新開始。這也是科學知識不斷進步的重要方式。</div>
+            <div class="text-en">Then the cycle begins again. This is one of the main ways scientific knowledge develops over time.</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 10: Role of AI -->
+      <section id="sec-10" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">10</span>
+          <h2 class="section-title">AI 在這門課裡扮演什麼角色？<br><span class="sub-en">What Role Will AI Play in This Course?</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="This semester, we will also use AI tools and digital technologies. AI can help us search for information, organize information, write code, analyze data, create figures and maps, suggest possible explanations, and even assist us in constructing models.">
+            <div class="text-zh">這學期我們也會使用很多 <strong>AI 技術與數位科技</strong>。<br>AI 可以幫助我們搜尋資料、整理資料、寫程式、分析資料、製作圖表、提出可能的解釋，甚至協助我們建立模型。</div>
+            <div class="text-en">This semester, we will also use <strong>AI tools and digital technologies</strong>.<br>AI can help us search for information, organize information, write code, analyze data, create figures and maps, suggest possible explanations, and even assist us in constructing models.</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <!-- AI Warning & Critical Checklist Box -->
+          <div class="ai-warning-box" data-speech-en="However, one thing is very important: An answer from AI is not automatically a correct answer.">
+            <div class="warning-header">
+              <span class="warning-icon">⚠️</span>
+              <div>
+                <div class="warning-zh">AI 給你答案，不代表答案就是正確的。</div>
+                <div class="warning-en">An answer from AI is not automatically a correct answer.</div>
+              </div>
+            </div>
+
+            <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem;">
+              當 AI 提供一個答案時，我希望大家開始問這 4 個關鍵問題：
+            </div>
+
+            <div class="ai-question-grid">
+              <div class="ai-q-item" data-speech-en="What is its claim?">
+                <div class="ai-q-icon">🎯</div>
+                <div class="ai-q-zh">它的 Claim 是什麼？</div>
+                <div class="ai-q-en">What is its claim?</div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+              <div class="ai-q-item" data-speech-en="What evidence does it have?">
+                <div class="ai-q-icon">🔍</div>
+                <div class="ai-q-zh">它有什麼 Evidence？</div>
+                <div class="ai-q-en">What evidence does it have?</div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+              <div class="ai-q-item" data-speech-en="Is its reasoning reasonable?">
+                <div class="ai-q-icon">⚖️</div>
+                <div class="ai-q-zh">它的 Reasoning 合理嗎？</div>
+                <div class="ai-q-en">Is its reasoning reasonable?</div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+              <div class="ai-q-item" data-speech-en="Can I find other evidence to verify it?">
+                <div class="ai-q-icon">🧪</div>
+                <div class="ai-q-zh">我可以找到其他資料來驗證嗎？</div>
+                <div class="ai-q-en">Can I find other evidence to verify it?</div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 11 -->
+      <section id="sec-11" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">11</span>
+          <h2 class="section-title">AI 可以協助思考，但不能取代理解<br><span class="sub-en">AI Can Support Thinking, but It Cannot Replace Understanding</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="In this course, AI is our collaborator. It can help us work faster and provide new ideas. But we are still responsible for making the final judgment.">
+            <div class="text-zh">因此，在這門課裡，AI 是我們的<strong>協作者</strong>。它可以幫助我們工作得更快，也可以提供新的想法。<strong>但是最後做判斷的人，還是我們自己。</strong></div>
+            <div class="text-en">In this course, AI is our <strong>collaborator</strong>. It can help us work faster and provide new ideas. <strong>But we are still responsible for making the final judgment.</strong></div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <div class="checklist-card">
+            <div class="checklist-card-title">我們必須隨時能夠清楚回答這 4 個問題：</div>
+            <div class="checklist-items">
+              <div class="check-item" data-speech-en="Why do I believe this answer?">
+                <span class="check-icon">✓</span>
+                <div>
+                  <div class="check-zh">我為什麼相信這個答案？</div>
+                  <div class="check-en">Why do I believe this answer?</div>
+                </div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+              <div class="check-item" data-speech-en="Where is my evidence?">
+                <span class="check-icon">✓</span>
+                <div>
+                  <div class="check-zh">我的證據在哪裡？</div>
+                  <div class="check-en">Where is my evidence?</div>
+                </div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+              <div class="check-item" data-speech-en="Can I explain this result?">
+                <span class="check-icon">✓</span>
+                <div>
+                  <div class="check-zh">我能不能解釋這個結果？</div>
+                  <div class="check-en">Can I explain this result?</div>
+                </div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+              <div class="check-item" data-speech-en="If the result does not make sense, how should I revise it?">
+                <span class="check-icon">✓</span>
+                <div>
+                  <div class="check-zh">如果結果不合理，我要怎麼修正？</div>
+                  <div class="check-en">If the result does not make sense, how should I revise it?</div>
+                </div>
+                <button type="button" class="btn-speak-inline">🔊</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="speech-block emphasis-box" data-speech-en="Real learning often begins with these questions.">
+            <div class="text-zh"><strong>真正的學習，往往就是從這些問題開始。</strong></div>
+            <div class="text-en"><strong>Real learning often begins with these questions.</strong></div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 12 -->
+      <section id="sec-12" class="lecture-section">
+        <div class="section-header">
+          <span class="sec-number">12</span>
+          <h2 class="section-title">這學期我們真正要學的是什麼？<br><span class="sub-en">What Are We Really Going to Learn This Semester?</span></h2>
+        </div>
+
+        <div class="speech-blocks-container">
+          <div class="speech-block" data-speech-en="Therefore, this course is not only about geophysics. We will study earthquakes, the internal structure of the Earth, plate motion, and how physical methods can be used to investigate our planet.">
+            <div class="text-zh">所以這門課不只是要教大家<strong>地球物理</strong>。我們會學習地震、地球內部構造、板塊運動，以及利用物理方法了解地球。</div>
+            <div class="text-en">Therefore, this course is not only about <strong>geophysics</strong>. We will study earthquakes, the internal structure of the Earth, plate motion, and how physical methods can be used to investigate our planet.</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <div class="speech-block" data-speech-en="We will also use AI, programming, data analysis, digital tools, and visualization techniques.">
+            <div class="text-zh">我們也會使用 <strong>AI、程式設計、資料分析、數位工具與視覺化技術</strong>。</div>
+            <div class="text-en">We will also use <strong>AI, programming, data analysis, digital tools, and visualization techniques</strong>.</div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+
+          <!-- Scientist Mindset Card -->
+          <div class="concept-card" style="border-left: 5px solid var(--primary-light);" data-speech-en="Observe a phenomenon, Ask a question, Develop an idea, Look for evidence, Construct an explanation, Test with data, Revise when needed, Build a better model.">
+            <span class="concept-tag" style="background: rgba(56, 189, 248, 0.2); color: var(--primary-light);">CORE OBJECTIVE</span>
+            <div class="concept-text-zh">
+              但更重要的是，我希望這門課可以教大家<strong>如何像科學家一樣思考</strong>：
+            </div>
+            <div class="concept-text-en">
+              But more importantly, I hope this course will teach you <strong>how to think like a scientist</strong>:
+            </div>
+            
+            <div class="scientific-pathway">
+              <span class="path-step">看到現象</span> ➔
+              <span class="path-step">提出問題</span> ➔
+              <span class="path-step">提出想法</span> ➔
+              <span class="path-step">尋找證據</span> ➔
+              <span class="path-step">建立解釋</span> ➔
+              <span class="path-step">資料測試</span> ➔
+              <span class="path-step">發現問題就修正</span> ➔
+              <span class="path-step final">建立更好的模型</span>
+            </div>
+            <button type="button" class="btn-speak-inline">🔊</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Interactive Mini-Quiz -->
+      <section id="mini-quiz" class="quiz-section-wrapper">
+        <div class="quiz-header">
+          <span class="quiz-badge">✍ INTERACTIVE CHECK</span>
+          <h3>課堂概念即時小測驗</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">
+            動動手指點選答案，檢驗剛剛所學的 CER 與科學建模觀念！
+          </p>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="quiz-card">
+          <div class="quiz-q-title">
+            <span class="quiz-q-num">Q1</span>
+            <span>下列哪一句話屬於科學思考架構中的「Claim（主張）」？</span>
+          </div>
+          <div class="quiz-options">
+            <button type="button" class="quiz-option" data-correct="false" data-explanation="這是觀察到的客觀數據資料，屬於 Evidence（證據）。">
+              <span>A. 全球地震觀測儀記錄顯示，環太平洋地區每年地震次數超過萬次。</span>
+            </button>
+            <button type="button" class="quiz-option" data-correct="true" data-explanation="「我認為地震集中在特定區域」表達了對現象的觀點與假說，正是標準的 Claim！">
+              <span>B. 我認為全世界的地震並不是均勻分布，而是集中在特定地帶。</span>
+            </button>
+            <button type="button" class="quiz-option" data-correct="false" data-explanation="這是引用地質物理原理解釋背後機制，屬於 Reasoning（推理）。">
+              <span>C. 因為板塊邊界相對運動會累積岩石應力，釋放時引發斷層破裂。</span>
+            </button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="quiz-card">
+          <div class="quiz-q-title">
+            <span class="quiz-q-num">Q2</span>
+            <span>當現有的科學模型「無法解釋」新發現的自然現象時，科學家應該怎麼做？</span>
+          </div>
+          <div class="quiz-options">
+            <button type="button" class="quiz-option" data-correct="false" data-explanation="假裝不存在違背了科學求真的精神。">
+              <span>A. 假裝該反例不存在，以維護現有模型的權威。</span>
+            </button>
+            <button type="button" class="quiz-option" data-correct="true" data-explanation="科學建模是一個動態循環。遇到反例應重新收集證據、檢討推理，進而修正模型！">
+              <span>B. 重新啟動 CER 循環，收集新證據、反思機制，進而修正或擴充模型。</span>
+            </button>
+            <button type="button" class="quiz-option" data-correct="false" data-explanation="全盤否定過去正確預測的部分也是不合理的，應在原有基礎上修正。">
+              <span>C. 立刻宣稱所有過去的模型完全錯誤並徹底放棄。</span>
+            </button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="quiz-card">
+          <div class="quiz-q-title">
+            <span class="quiz-q-num">Q3</span>
+            <span>在地球物理課中使用 AI（如 ChatGPT 或 Claude）時，最重要的原則是什麼？</span>
+          </div>
+          <div class="quiz-options">
+            <button type="button" class="quiz-option" data-correct="false" data-explanation="AI 可能產生幻覺（Hallucination），其答案不等於真理。">
+              <span>A. 直接複製貼上 AI 的回答，因為 AI 懂得比人類更多。</span>
+            </button>
+            <button type="button" class="quiz-option" data-correct="true" data-explanation="AI 是高效率協作者，但最後批判驗證、辨識證據與獨立理解的責任仍在於自己！">
+              <span>B. 將 AI 視為思考協作者，主動檢視其 Claim、Evidence 與 Reasoning，由自己做出最終判斷。</span>
+            </button>
+            <button type="button" class="quiz-option" data-correct="false" data-explanation="本課程鼓勵積極且正確地使用現代數位工具輔助探索。">
+              <span>C. 完全禁止使用任何 AI 科技。</span>
+            </button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </section>
+
+      <!-- Closing Message Banner -->
+      <section id="closing-msg" class="lecture-section" data-speech-en="We use geophysics to study the Earth, English to access science, AI to support exploration, and our own thinking to understand the world.">
+        <div class="closing-card">
+          <span class="closing-badge">CLOSING MESSAGE / 課程總結</span>
+          
+          <div style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+            如果要用一句話說明這學期我們要做什麼，我會說：
+          </div>
+
+          <blockquote class="grand-quote">
+            <div class="quote-text-zh">
+              「我們用地球物理來學習地球，用英文來接觸科學，用 AI 來協助探索，但最後用自己的思考來理解世界。」
+            </div>
+            <div class="quote-text-en">
+              “We use geophysics to study the Earth, English to access science, AI to support exploration, and our own thinking to understand the world.”
+            </div>
+          </blockquote>
+
+          <div class="closing-actions">
+            <button type="button" class="btn-primary-glow" id="playClosingBtn">
+              <span>🔊 聆聽總結發音</span>
+            </button>
+            <button type="button" class="btn-secondary-outline" id="copyClosingBtn">
+              <span>📋 複製金句</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Site Footer -->
+      <footer class="site-footer">
+        <p class="footer-title">地球物理第一次上課：中英對照開場講稿</p>
+        <p class="footer-sub">Designed for Bilingual Science Education &bull; Ready for GitHub Pages & Local Learning</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Floating Audio Player Bar -->
+  <div id="floatingAudioBar" class="floating-audio-bar">
+    <div class="audio-bar-indicator">
+      <div class="sound-wave">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <span id="audioStatusText" class="audio-bar-text">正在朗讀英文...</span>
+    </div>
+    <div class="audio-controls-group">
+      <select id="speechRateSelect" class="rate-selector" title="調整語速">
+        <option value="0.85">0.85x (慢速學習)</option>
+        <option value="1.0" selected>1.0x (標準語速)</option>
+        <option value="1.2">1.2x (快速複習)</option>
+      </select>
+      <button type="button" id="stopAudioBtn" class="btn-audio-action btn-audio-stop">停止</button>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="backToTopBtn" class="back-to-top" title="回到頂部" aria-label="回到頂部">↑</button>
+
+  <script src="app.js"></script>
+
+  <!-- Inlined Script Engine (Guarantees Perfect Execution Everywhere) -->
+  <script>
+  (function () {
+    'use strict';
+
+    const state = {
+      theme: localStorage.getItem('geo_theme') || 'dark',
+      mode: localStorage.getItem('geo_mode') || 'both',
+      fontSizeLevel: parseInt(localStorage.getItem('geo_font_level') || '0', 10),
+      speechRate: parseFloat(localStorage.getItem('geo_speech_rate') || '1.0'),
+      activePlayingBlock: null,
+      synth: window.speechSynthesis,
+      voices: []
+    };
+
+    const html = document.documentElement;
+    const progressBar = document.getElementById('progressBar');
+    const themeToggle = document.getElementById('themeToggle');
+    const langBtns = document.querySelectorAll('.lang-btn');
+    const fontDecrease = document.getElementById('fontDecrease');
+    const fontReset = document.getElementById('fontReset');
+    const fontIncrease = document.getElementById('fontIncrease');
+    const searchInput = document.getElementById('searchInput');
+    const searchClear = document.getElementById('searchClear');
+    const sidebarToc = document.getElementById('sidebarToc');
+    const mobileTocToggle = document.getElementById('mobileTocToggle');
+    const closeTocBtn = document.getElementById('closeTocBtn');
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    const floatingAudioBar = document.getElementById('floatingAudioBar');
+    const audioStatusText = document.getElementById('audioStatusText');
+    const stopAudioBtn = document.getElementById('stopAudioBtn');
+    const speechRateSelect = document.getElementById('speechRateSelect');
+    const playClosingBtn = document.getElementById('playClosingBtn');
+    const copyClosingBtn = document.getElementById('copyClosingBtn');
+    const startFullAudioBtn = document.getElementById('startFullAudioBtn');
+
+    // 1. Theme
+    function applyTheme(theme) {
+      state.theme = theme;
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem('geo_theme', theme);
+    }
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        applyTheme(state.theme === 'dark' ? 'light' : 'dark');
+      });
+    }
+    applyTheme(state.theme);
+
+    // 2. Mode
+    function applyMode(mode) {
+      state.mode = mode;
+      html.setAttribute('data-mode', mode);
+      localStorage.setItem('geo_mode', mode);
+      langBtns.forEach(btn => {
+        if (btn.getAttribute('data-set-mode') === mode) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+    }
+    langBtns.forEach(btn => {
+      btn.addEventListener('click', () => applyMode(btn.getAttribute('data-set-mode')));
+    });
+    applyMode(state.mode);
+
+    // 3. Font Size
+    function applyFontSize(level) {
+      state.fontSizeLevel = Math.max(-1, Math.min(2, level));
+      const sizeMap = { '-1': '0.95rem', '0': '1.05rem', '1': '1.15rem', '2': '1.25rem' };
+      document.documentElement.style.setProperty('--body-font-size', sizeMap[state.fontSizeLevel] || '1.05rem');
+      localStorage.setItem('geo_font_level', state.fontSizeLevel);
+    }
+    if (fontDecrease) fontDecrease.addEventListener('click', () => applyFontSize(state.fontSizeLevel - 1));
+    if (fontReset) fontReset.addEventListener('click', () => applyFontSize(0));
+    if (fontIncrease) fontIncrease.addEventListener('click', () => applyFontSize(state.fontSizeLevel + 1));
+    applyFontSize(state.fontSizeLevel);
+
+    // 4. Progress & Scrollspy
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      if (progressBar) progressBar.style.width = `${progress}%`;
+
+      if (backToTopBtn) {
+        if (scrollTop > 400) backToTopBtn.classList.add('visible');
+        else backToTopBtn.classList.remove('visible');
+      }
+
+      const sections = document.querySelectorAll('section[id]');
+      let currentId = '';
+      sections.forEach(sec => {
+        if (scrollTop >= sec.offsetTop - 140) currentId = sec.getAttribute('id');
+      });
+      if (currentId) {
+        document.querySelectorAll('.toc-link').forEach(link => {
+          if (link.getAttribute('href') === `#${currentId}`) link.classList.add('active');
+          else link.classList.remove('active');
+        });
+      }
+    });
+
+    if (backToTopBtn) {
+      backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+
+    // 5. Mobile TOC
+    if (mobileTocToggle && sidebarToc) {
+      mobileTocToggle.addEventListener('click', () => sidebarToc.classList.toggle('open'));
+    }
+    if (closeTocBtn && sidebarToc) {
+      closeTocBtn.addEventListener('click', () => sidebarToc.classList.remove('open'));
+    }
+    document.querySelectorAll('.toc-link').forEach(link => {
+      link.addEventListener('click', () => { if (sidebarToc) sidebarToc.classList.remove('open'); });
+    });
+
+    // 6. Search Filter
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const q = e.target.value.trim().toLowerCase();
+        if (searchClear) searchClear.style.display = q ? 'block' : 'none';
+
+        const blocks = document.querySelectorAll('.speech-block, .concept-card, .quote-callout');
+        blocks.forEach(block => {
+          const text = block.textContent.toLowerCase();
+          block.style.display = (!q || text.includes(q)) ? '' : 'none';
+        });
+      });
+      if (searchClear) {
+        searchClear.addEventListener('click', () => {
+          searchInput.value = '';
+          searchInput.dispatchEvent(new Event('input'));
+        });
+      }
+    }
+
+    // 7. Speech Engine
+    function loadVoices() {
+      if (!state.synth) return;
+      state.voices = state.synth.getVoices();
+    }
+    if (state.synth) {
+      loadVoices();
+      if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = loadVoices;
+    }
+
+    function getBestEnglishVoice() {
+      if (!state.voices.length) return null;
+      const priority = ['Google US English', 'en-US-Neural2', 'Samantha', 'Microsoft Jenny Online', 'en-US'];
+      for (const name of priority) {
+        const found = state.voices.find(v => v.name.includes(name) || v.lang.replace('_', '-') === name);
+        if (found) return found;
+      }
+      return state.voices.find(v => v.lang.startsWith('en')) || state.voices[0];
+    }
+
+    function speakText(text, onEndCallback, targetElement) {
+      if (!state.synth) {
+        alert('您的瀏覽器不支援語音功能。');
+        return;
+      }
+      state.synth.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = state.speechRate;
+      const voice = getBestEnglishVoice();
+      if (voice) utterance.voice = voice;
+
+      if (floatingAudioBar) floatingAudioBar.classList.add('visible');
+      if (audioStatusText) audioStatusText.textContent = text.slice(0, 32) + (text.length > 32 ? '...' : '');
+
+      if (targetElement) {
+        if (state.activePlayingBlock) state.activePlayingBlock.classList.remove('playing-active');
+        state.activePlayingBlock = targetElement;
+        state.activePlayingBlock.classList.add('playing-active');
+      }
+
+      utterance.onend = () => {
+        if (state.activePlayingBlock) {
+          state.activePlayingBlock.classList.remove('playing-active');
+          state.activePlayingBlock = null;
+        }
+        if (onEndCallback) onEndCallback();
+        else if (floatingAudioBar) floatingAudioBar.classList.remove('visible');
+      };
+
+      utterance.onerror = () => {
+        if (state.activePlayingBlock) {
+          state.activePlayingBlock.classList.remove('playing-active');
+          state.activePlayingBlock = null;
+        }
+        if (floatingAudioBar) floatingAudioBar.classList.remove('visible');
+      };
+
+      state.synth.speak(utterance);
+    }
+
+    function stopAudio() {
+      if (state.synth) state.synth.cancel();
+      if (state.activePlayingBlock) {
+        state.activePlayingBlock.classList.remove('playing-active');
+        state.activePlayingBlock = null;
+      }
+      if (floatingAudioBar) floatingAudioBar.classList.remove('visible');
+    }
+
+    if (stopAudioBtn) stopAudioBtn.addEventListener('click', stopAudio);
+    if (speechRateSelect) {
+      speechRateSelect.value = state.speechRate.toString();
+      speechRateSelect.addEventListener('change', (e) => {
+        state.speechRate = parseFloat(e.target.value);
+        localStorage.setItem('geo_speech_rate', state.speechRate);
+      });
+    }
+
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('.btn-speak-inline, .btn-speak-mini');
+      if (btn) {
+        const block = btn.closest('[data-speech-en]');
+        if (block) {
+          const txt = block.getAttribute('data-speech-en');
+          if (txt) speakText(txt, null, block);
+        }
+      }
+    });
+
+    if (playClosingBtn) {
+      playClosingBtn.addEventListener('click', () => {
+        const closingCard = document.getElementById('closing-msg');
+        const text = closingCard.getAttribute('data-speech-en') || 
+          "We use geophysics to study the Earth, English to access science, AI to support exploration, and our own thinking to understand the world.";
+        speakText(text, null, closingCard);
+      });
+    }
+
+    if (copyClosingBtn) {
+      copyClosingBtn.addEventListener('click', () => {
+        const quoteText = `「我們用地球物理來學習地球，用英文來接觸科學，用 AI 來協助探索，但最後用自己的思考來理解世界。」\n"We use geophysics to study the Earth, English to access science, AI to support exploration, and our own thinking to understand the world."`;
+        navigator.clipboard.writeText(quoteText).then(() => {
+          const orig = copyClosingBtn.innerHTML;
+          copyClosingBtn.innerHTML = '<span>✅ 已複製金句！</span>';
+          setTimeout(() => { copyClosingBtn.innerHTML = orig; }, 2000);
+        });
+      });
+    }
+
+    if (startFullAudioBtn) {
+      startFullAudioBtn.addEventListener('click', () => {
+        const blocks = Array.from(document.querySelectorAll('[data-speech-en]'));
+        if (!blocks.length) return;
+        let currentIndex = 0;
+        function playNext() {
+          if (currentIndex >= blocks.length) {
+            stopAudio();
+            alert('已完成整篇講稿朗讀！');
+            return;
+          }
+          const block = blocks[currentIndex++];
+          const text = block.getAttribute('data-speech-en');
+          block.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          speakText(text, playNext, block);
+        }
+        playNext();
+      });
+    }
+
+    // 8. Modeling Cycle
+    const cycleData = {
+      1: { badge: '步驟 1 / Step 1', title: '觀察自然界的真實現象 (Observe Phenomena)', desc: '透過科學儀器（地震儀波形、重力與磁場量測、衛星 GPS 地殼變形）或地表地質調查，記錄並發現自然界中不尋常或規律的現象。' },
+      2: { badge: '步驟 2 / Step 2', title: '提出初步主張與假說 (Make a Claim)', desc: '針對觀察到的規律，提出一個明確且具有解釋性的主張（Claim）。例如：「全球地震並非均勻發生，而是集中於特定狹窄帶狀區域。」' },
+      3: { badge: '步驟 3 / Step 3', title: '尋找與彙整客觀證據 (Collect & Analyze Evidence)', desc: '整理觀測數據與圖表（例如數十年全球大地震震央空間分布圖、震源深度剖面），確認數據是否能客觀支持該主張。' },
+      4: { badge: '步驟 4 / Step 4', title: '建立物理推理與機制 (Construct Reasoning)', desc: '運用已知的物理學定律與地質學原理，解釋證據背後的動力機制：例如板塊邊界的剪切力、擠壓力或張力累積與斷層破裂。' },
+      5: { badge: '步驟 5 / Step 5', title: '建立科學模型 (Build a Scientific Model)', desc: '將 Claim、Evidence 與 Reasoning 綜合成一個通用的科學模型（如「板塊構造學說 Plate Tectonics」），描繪地表剛性板塊的運動方式。' },
+      6: { badge: '步驟 6 / Step 6', title: '應用模型進行預測 (Explain & Predict)', desc: '好的模型具備預測能力。若模型正確，我們可以推論：已知板塊聚合邊界（如環太平洋地區）在未來特定應力累積下，發生強震的機率遠高於板塊內部。' },
+      7: { badge: '步驟 7 / Step 7', title: '發現模型無法解釋的新現象 (Find Anomalies)', desc: '科學不會停下腳步。當我們發現板塊內部（如夏威夷熱點火山或板塊內斷層地震）發生強震時，舊模型無法單純用板塊邊界運動解釋。' },
+      8: { badge: '步驟 8 / Step 8', title: '修正與進化科學模型 (Revise & Upgrade Model)', desc: '不忽視反例，重新啟動 CER 探究流程，提出「地函熱柱（Mantle Plumes）」假說來修正擴充板塊構造模型，推動科學向前邁進！' }
+    };
+
+    const cycleSteps = document.querySelectorAll('.cycle-step');
+    const detailBadge = document.querySelector('.detail-badge');
+    const detailTitle = document.getElementById('detailTitle');
+    const detailDesc = document.getElementById('detailDesc');
+
+    cycleSteps.forEach(step => {
+      step.addEventListener('click', () => {
+        const stepNum = step.getAttribute('data-step');
+        cycleSteps.forEach(s => s.classList.remove('active'));
+        step.classList.add('active');
+        if (cycleData[stepNum]) {
+          if (detailBadge) detailBadge.textContent = cycleData[stepNum].badge;
+          if (detailTitle) detailTitle.textContent = cycleData[stepNum].title;
+          if (detailDesc) detailDesc.textContent = cycleData[stepNum].desc;
+        }
+      });
+    });
+
+    // 9. Interactive Quiz
+    const quizCards = document.querySelectorAll('.quiz-card');
+    quizCards.forEach(card => {
+      const options = card.querySelectorAll('.quiz-option');
+      const feedback = card.querySelector('.quiz-feedback');
+      options.forEach(opt => {
+        opt.addEventListener('click', () => {
+          options.forEach(o => o.classList.add('disabled'));
+          const isCorrect = opt.getAttribute('data-correct') === 'true';
+          if (isCorrect) {
+            opt.classList.add('correct');
+            if (feedback) {
+              feedback.className = 'quiz-feedback show-correct';
+              feedback.innerHTML = '🎉 <strong>答對了！</strong> ' + opt.getAttribute('data-explanation');
+            }
+          } else {
+            opt.classList.add('wrong');
+            const correctOpt = card.querySelector('.quiz-option[data-correct="true"]');
+            if (correctOpt) correctOpt.classList.add('correct');
+            if (feedback) {
+              feedback.className = 'quiz-feedback show-wrong';
+              feedback.innerHTML = '💡 <strong>再想想看：</strong> ' + opt.getAttribute('data-explanation');
+            }
+          }
+        });
+      });
+    });
+
+  })();
+  </script>
+</body>
+</html>
